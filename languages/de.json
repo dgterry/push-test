@@ -1,0 +1,41 @@
+{
+  "client": {
+    "errors": {
+      "generic": "Es gibt zurzeit Probleme. Aktualisieren Sie die Anzeige, um es erneut zu versuchen.",
+      "imageSource": "Bild ist nicht verfügbar.",
+      "singleMessage": "Es gibt ein Problem mit der Nachricht, die Sie gerade gesendet haben. Fragen Sie bitte etwas anderes."
+    },
+    "input": {
+      "placeholder": "Geben Sie etwas ein...",
+      "ariaInputLabel": "Geben Sie eine Nachricht ein und drücken Sie die Eingabetaste, um sie zu senden",
+      "buttonLabel": "Zum Senden der Nachricht klicken"
+    },
+    "window": {
+      "title": "Watson Assistant-Chatfenster",
+      "ariaWindowOpened": "Watson Assistant-Chatfenster geöffnet",
+      "ariaWindowClosed": "Watson Assistant-Chatfenster geschlossen"
+    },
+    "launcher": {
+      "isOpen": "Watson Assistant-Chatfenster schließen",
+      "isClosed": "Watson Assistant-Chatfenster öffnen"
+    },
+    "messages": {
+      "youSaid": "Sie sagten",
+      "watsonSaid": "Watson Assistant sagte",
+      "searchResults": "Suchergebnisse"
+    },
+    "options": {
+      "select": "Option auswählen",
+      "seeMore": "Weitere Optionen anzeigen",
+      "ariaOptionsDisabled": "Diese Optionen sind inaktiviert und können nicht ausgewählt werden"
+    },
+    "header": {
+      "previewLinkTitle": "Assistent - Vorschau"
+    },
+    "agent": {
+      "mockTitle": "Mit Agenten verbinden",
+      "mockDescription": "Der Antworttyp 'Mit Agenten verbinden' wurde empfangen. In der Produktion können Sie Code zum Handhaben dieser Verbindung schreiben.",
+      "mockMessageLabel": "Die folgende Nachricht wird an den Agenten gesendet:"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "client": {
+    "errors": {
+      "generic": "我們現在遇到一些問題。請重新整理以重試。",
+      "imageSource": "影像無法使用。",
+      "singleMessage": "您剛傳送的訊息出錯，但您可以隨時向我諮詢其他事宜。"
+    },
+    "input": {
+      "placeholder": "鍵入一些內容...",
+      "ariaInputLabel": "鍵入訊息並按 Enter 鍵傳送",
+      "buttonLabel": "按一下以傳送訊息"
+    },
+    "window": {
+      "title": "Watson Assistant 會談視窗",
+      "ariaWindowOpened": "已開啟 Watson Assistant 會談視窗",
+      "ariaWindowClosed": "已關閉 Watson Assistant 會談視窗"
+    },
+    "launcher": {
+      "isOpen": "關閉 Watson Assistant 會談視窗",
+      "isClosed": "開啟 Watson Assistant 會談視窗"
+    },
+    "messages": {
+      "youSaid": "您說過",
+      "watsonSaid": "Watson Assistant 說過",
+      "searchResults": "搜尋結果"
+    },
+    "options": {
+      "select": "選取選項",
+      "seeMore": "請參閱其他選項",
+      "ariaOptionsDisabled": "這些選項已停用，且無法選取"
+    },
+    "header": {
+      "previewLinkTitle": "預覽助理"
+    },
+    "agent": {
+      "mockTitle": "連接至代理程式",
+      "mockDescription": "收到連接至代理程式回應類型。在生產中，您會撰寫程式碼以處理此連線。",
+      "mockMessageLabel": "此訊息將傳送至代理程式："
+    }
+  }
+}

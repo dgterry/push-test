@@ -1,0 +1,41 @@
+{
+  "client": {
+    "errors": {
+      "generic": "지금 문제가 발생했습니다. 다시 시도하려면 새로 고치십시오.",
+      "imageSource": "이미지를 사용할 수 없습니다.",
+      "singleMessage": "방금 전송한 메시지에 오류가 있습니다. 기타 다른 사항을 문의하십시오."
+    },
+    "input": {
+      "placeholder": "내용 입력...",
+      "ariaInputLabel": "메시지를 입력한 후 전송하려면 Enter 키를 누르십시오.",
+      "buttonLabel": "메시지를 전송하려면 클릭하십시오."
+    },
+    "window": {
+      "title": "Watson Assistant 대화 창",
+      "ariaWindowOpened": "Watson Assistant 대화 창을 열었습니다.",
+      "ariaWindowClosed": "Watson Assistant 대화 창을 닫았습니다."
+    },
+    "launcher": {
+      "isOpen": "Watson Assistant 대화 창 닫기",
+      "isClosed": "Watson Assistant 대화 창 열기"
+    },
+    "messages": {
+      "youSaid": "사용자가 말한 내용:",
+      "watsonSaid": "Watson Assistant에서 말한 내용:",
+      "searchResults": "검색 결과"
+    },
+    "options": {
+      "select": "옵션 선택",
+      "seeMore": "추가 옵션 표시",
+      "ariaOptionsDisabled": "이 옵션은 사용 안함으로 설정되어 있으므로 선택할 수 없습니다."
+    },
+    "header": {
+      "previewLinkTitle": "Assistant 미리보기"
+    },
+    "agent": {
+      "mockTitle": "에이전트에 연결",
+      "mockDescription": "에이전트에 연결 응답 유형이 수신되었습니다. 프로덕션에서 이 연결을 처리하는 코드를 작성합니다.",
+      "mockMessageLabel": "이 메시지는 다음 에이전트에게 전송됩니다."
+    }
+  }
+}

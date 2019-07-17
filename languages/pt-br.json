@@ -1,0 +1,41 @@
+{
+  "client": {
+    "errors": {
+      "generic": "Estamos tendo alguns problemas agora. Atualize para tentar novamente.",
+      "imageSource": "A imagem não está disponível.",
+      "singleMessage": "Ocorreu um erro na mensagem que você acabou de enviar, mas fique à vontade para me perguntar outra coisa."
+    },
+    "input": {
+      "placeholder": "Digite alguma coisa...",
+      "ariaInputLabel": "Digite uma mensagem e pressione Enter para enviar",
+      "buttonLabel": "Clique para enviar a mensagem"
+    },
+    "window": {
+      "title": "Janela de bate-papo do Watson Assistant",
+      "ariaWindowOpened": "Janela de bate-papo do Watson Assistant aberta",
+      "ariaWindowClosed": "Janela de bate-papo do Watson Assistant fechada"
+    },
+    "launcher": {
+      "isOpen": "Fechar a janela de bate-papo do Watson Assistant",
+      "isClosed": "Abrir a janela de bate-papo do Watson Assistant"
+    },
+    "messages": {
+      "youSaid": "Você disse",
+      "watsonSaid": "O Watson Assistant disse",
+      "searchResults": "Resultados da pesquisa"
+    },
+    "options": {
+      "select": "Selecione uma opção",
+      "seeMore": "Consulte mais opções",
+      "ariaOptionsDisabled": "Essas opções estão desativadas e não podem ser selecionadas"
+    },
+    "header": {
+      "previewLinkTitle": "Visualização prévia do Assistente"
+    },
+    "agent": {
+      "mockTitle": "Conectar ao Agente",
+      "mockDescription": "O tipo de resposta de conexão com o agente foi recebido. Na produção, você escreveria o código para manipular essa conexão.",
+      "mockMessageLabel": "Essa mensagem será enviada ao agente:"
+    }
+  }
+}

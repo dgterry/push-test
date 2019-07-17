@@ -1,0 +1,41 @@
+{
+  "client": {
+    "errors": {
+      "generic": "Estamos experimentando algunos problemas en este momento. Por favor, actualice para intentarlo de nuevo.",
+      "imageSource": "La imagen no está disponible.",
+      "singleMessage": "Se ha producido un error con el mensaje que acaba de enviar, pero puede preguntarme otra cosa."
+    },
+    "input": {
+      "placeholder": "Escriba algo...",
+      "ariaInputLabel": "Escriba un mensaje y pulse la tecla Intro para enviarlo",
+      "buttonLabel": "Pulse para enviar el mensaje"
+    },
+    "window": {
+      "title": "Ventana de conversación de Watson Assistant",
+      "ariaWindowOpened": "Se abrió la ventana de conversación de Watson Assistant",
+      "ariaWindowClosed": "Se cerró la ventana de conversación de Watson Assistant"
+    },
+    "launcher": {
+      "isOpen": "Cerrar la ventana de conversación de Watson Assistant",
+      "isClosed": "Abrir la ventana de conversación de Watson Assistant"
+    },
+    "messages": {
+      "youSaid": "Usted ha dicho",
+      "watsonSaid": "Watson Assistant ha dicho",
+      "searchResults": "Resultado de la búsqueda"
+    },
+    "options": {
+      "select": "Seleccionar una opción",
+      "seeMore": "Ver más opciones",
+      "ariaOptionsDisabled": "Estas opciones están inhabilitadas y no se pueden seleccionar"
+    },
+    "header": {
+      "previewLinkTitle": "Vista previa del asistente"
+    },
+    "agent": {
+      "mockTitle": "Conectar con agente",
+      "mockDescription": "Se ha recibido el tipo de respuesta Conectar con agente. En producción, debería escribirse código para gestionar esta conexión.",
+      "mockMessageLabel": "Este mensaje se enviará al agente:"
+    }
+  }
+}

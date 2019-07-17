@@ -1,0 +1,41 @@
+{
+  "client": {
+    "errors": {
+      "generic": "نواجه بعض المشاكل في الوقت الحالي. يرجى التجديد لاعادة المحاولة.",
+      "imageSource": "الصورة غير متاحة.",
+      "singleMessage": "يوجد خطأ في الرسالة التي قمت بارسالها للتو، لكن لا تتردد في طلب شيء آخر."
+    },
+    "input": {
+      "placeholder": "أدخل شيء...",
+      "ariaInputLabel": "أدخل رسالة واضغط Enter للارسال",
+      "buttonLabel": "اضغط لارسال الرسالة"
+    },
+    "window": {
+      "title": "نافذة محادثة Watson Assistant",
+      "ariaWindowOpened": "تم فتح نافذة محادثة Watson Assistant",
+      "ariaWindowClosed": "تم اغلاق نافذة محادثة Watson Assistant"
+    },
+    "launcher": {
+      "isOpen": "اغلاق نافذة محادثة Watson Assistant",
+      "isClosed": "فتح نافذة محادثة Watson Assistant"
+    },
+    "messages": {
+      "youSaid": "أنت قلت",
+      "watsonSaid": "Watson Assistant قال",
+      "searchResults": "نتائج البحث"
+    },
+    "options": {
+      "select": "تحديد اختيار",
+      "seeMore": "لمزيد من الاختيارات",
+      "ariaOptionsDisabled": "سيتم الغاء اتاحة هذه الاختيارات ولا يمكن تحديدها"
+    },
+    "header": {
+      "previewLinkTitle": "معاينة المساعد"
+    },
+    "agent": {
+      "mockTitle": "الاتصال بالأداة البرمجية",
+      "mockDescription": "تم استلام نوع الاستجابة اتصال بالأداة البرمجية. في عملية الانتاج، ستقوم بكتابة كود للتعامل مع عملية الاتصال هذه.",
+      "mockMessageLabel": "سيتم ارسال هذه الرسالة الى الأداة البرمجية:"
+    }
+  }
+}

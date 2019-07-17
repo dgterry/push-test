@@ -1,0 +1,41 @@
+{
+  "client": {
+    "errors": {
+      "generic": "Máme zrovna nějaké problémy. Proveďte obnovení a zkuste to znovu.",
+      "imageSource": "Obrázek není k dispozici.",
+      "singleMessage": "Došlo k chybě s vaší právě odeslanou zprávou, ale klidně se zeptejte na něco jiného."
+    },
+    "input": {
+      "placeholder": "Zadejte něco...",
+      "ariaInputLabel": "Zadejte zprávu a stisknutím klávesy Enter ji odešlete",
+      "buttonLabel": "Klepnutím odešlete zprávu"
+    },
+    "window": {
+      "title": "Okno konverzace produktu Watson Assistant",
+      "ariaWindowOpened": "Otevřeno okno konverzace produktu Watson Assistant",
+      "ariaWindowClosed": "Zavřeno okno konverzace produktu Watson Assistant"
+    },
+    "launcher": {
+      "isOpen": "Zavřít okno konverzace produktu Watson Assistant",
+      "isClosed": "Otevřít okno konverzace produktu Watson Assistant"
+    },
+    "messages": {
+      "youSaid": "Vy jste řekli",
+      "watsonSaid": "Watson Assistant řekl",
+      "searchResults": "Výsledky hledání"
+    },
+    "options": {
+      "select": "Vybrat volbu",
+      "seeMore": "Zobrazit další volby",
+      "ariaOptionsDisabled": "Tyto volby jsou zakázány a nelze je vybrat"
+    },
+    "header": {
+      "previewLinkTitle": "Náhled asistenta"
+    },
+    "agent": {
+      "mockTitle": "Připojení k agentoviة",
+      "mockDescription": "Byla přijata odpověď typu Připojení k agentovi. V produkčním prostředí byste k obsloužení tohoto připojení napsali kód.",
+      "mockMessageLabel": "Tato zpráva se odešle agentovi:"
+    }
+  }
+}
