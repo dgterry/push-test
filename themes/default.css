@@ -1,0 +1,139 @@
+:root {
+
+  /*
+   * COLORS
+   * Default colors for use across web-experience.
+   */
+
+  /* These colors will be incorporated in the new re-skin of web-experience.
+
+  //  --BASE-brand-font-color: #5B5B5B; // GRAY - might have it turned off by default for web-experience
+  //  --BASE-date-font-color: #8E8E8E; // GRAY - library day.js - bring in bidi -
+  //  --BASE-shadow-color: #000000; // 40%
+
+  //  --INPUT-active-font-color: #000000; // BLACK
+  //  --INPUT-background-color: #FFFFFF; // WHITE
+  //  --INPUT-border-color: #C9C9C9; // GRAY
+  //  --INPUT-message-color: #E1E1E1; // DARK GRAY
+  //  --INPUT-unactive-font-color: #5B5B5B; // GRAY
+
+  //  --HEADER-font-color: #FFFFFF; // WHITE
+
+  //  --MESSAGE-font-color: #000000; // BLACK
+
+  */
+
+  --WWX-BASE-accent-color: #0354E9;
+  --WWX-BASE-primary-color: #FFFFFF;
+  --WWX-BASE-secondary-color: #E1E1E1;
+  --WWX-BASE-background-color: #F3F3F3;
+  --WWX-BASE-font-color: #000000;
+
+
+  --WWX-BASE-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+
+
+  --BASE-loading-color: #dddddd; /* Loading color for images/videos */
+
+  --WWX-MESSAGE-box-shadow-color: #b3d7ec;
+
+
+
+  /*
+   * SPACING
+   * We should make small, med, large spacing, etc.
+   */
+
+  /*
+   * TYPOGRAPHY
+   * Where can they control fonts? We can alwasy add more stuff later when someone asks for it. Be VERY conservative.
+   * Titles?... they stuff on home? What is the MINIMUM amount of stuff.
+   * ONCE it's in a variable, we'll support in FOREVER. We're looking for MVP.
+   */
+
+   --WWX-BASE-font-family: helvetica, arial; /* Do we want to be using IBM Plex here? */
+
+
+   --WWX-BASE-font-size: 1em;
+   --WWX-BASE-line-height: 1.25em;
+
+
+  /*
+   * BASE
+   * The styling variables for the BASE, main structure, of the web-experience.
+   */
+
+  --BASE-border-radius: 0.5em;
+  --BASE-border-width: 1px;
+
+
+  /*
+   * BUTTON
+   * The styling variables for the BUTTON component used across the web-experience.
+   */
+
+  --WWX-BUTTON-background-color: var(--WWX-BASE-primary-color);
+  --WWX-BUTTON-hover-background-color: var(--WWX-BASE-accent-color);
+
+  --BUTTON-active-background-color: var(--WWX-BASE-accent-color);
+  --BUTTON-disabled-background-color: var(--WWX-BUTTON-background-color);
+  --BUTTON-focus-background-color: var(--WWX-BASE-accent-color);
+  --BUTTON-selected-background-color: var(--WWX-BASE-accent-color);
+
+  --BUTTON-border-color: var(--WWX-BASE-secondary-color);
+  --BUTTON-border-radius: var(--BASE-border-radius);
+  --BUTTON-border-radius-first: var(--BUTTON-border-radius) var(--BUTTON-border-radius) 0 0;
+  --BUTTON-border-radius-last: 0 0 var(--BUTTON-border-radius) var(--BUTTON-border-radius);
+  --BUTTON-border-width: var(--BASE-border-width);
+
+  --BUTTON-font-align: left;
+  --BUTTON-font-color: var(--WWX-BASE-accent-color);
+  --BUTTON-active-font-color: var(--WWX-BASE-primary-color);
+  --BUTTON-disabled-font-color: var(--BUTTON-font-color);
+  --BUTTON-focus-font-color: var(--WWX-BASE-primary-color);
+  --BUTTON-hover-font-color: var(--WWX-BASE-primary-color);
+  --BUTTON-selected-font-color: var(--WWX-BASE-primary-color);
+
+
+  /*
+   * OPTIONS styling
+   */
+
+  --WWX-OPTIONS-selected-width: 260px; /* Need to figure out where these are coming from. */
+  --WWX-OPTIONS-width: 160px; /* Why are these BUTTONS and not BUTTON */
+
+  /*
+   * HEADER styling
+   */
+
+  --WWX-HEADER-background-color: var(--WWX-BASE-accent-color);
+  --WWX-HEADER-color: var(--WWX-BASE-primary-color);
+  --WWX-HEADER-height: 56px;
+
+  /*
+   * INPUT styling
+   */
+
+  --WWX-INPUT-background-color: var(--WWX-BASE-primary-color);
+  --WWX-INPUT-font-size: 0.875em;
+  --WWX-INPUT-height: 56px;
+  --WWX-INPUT-icon-color: var(--WWX-BASE-accent-color);
+
+
+
+  /*
+   * MESSAGE styling
+   */
+
+  --WWX-MESSAGE-icon-background-color: var(--WWX-BASE-accent-color);
+  --WWX-MESSAGE-font-size: 0.875em;
+
+  --WWX-MESSAGE-received-background-color: var(--WWX-BASE-primary-color);
+  --WWX-MESSAGE-received-font-color: var(--WWX-BASE-font-color);
+
+  --WWX-MESSAGE-sent-background-color: var(--WWX-BASE-secondary-color);
+  --WWX-MESSAGE-border-radius: 5px;
+  --WWX-MESSAGE-sent-font-color: var(--WWX-BASE-font-color);
+
+
+}
