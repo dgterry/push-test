@@ -31,11 +31,6 @@
     },
     "header": {
       "previewLinkTitle": "Assistant-preview"
-    },
-    "agent": {
-      "mockTitle": "Verbinden met agent",
-      "mockDescription": "Het responstype verbinden met agent is ontvangen. In productie zou u code schrijven om deze verbinding af te handelen.",
-      "mockMessageLabel": "Dit bericht wordt aan de agent gezonden:"
     }
   }
 }

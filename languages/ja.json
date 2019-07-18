@@ -31,11 +31,6 @@
     },
     "header": {
       "previewLinkTitle": "Assistant プレビュー"
-    },
-    "agent": {
-      "mockTitle": "Connect to Agent",
-      "mockDescription": "「Connect to Agent」応答タイプを受け取りました。本番環境では、この接続を処理するためのコードを書くことになります。",
-      "mockMessageLabel": "メッセージは、エージェントに送られます:"
     }
   }
 }

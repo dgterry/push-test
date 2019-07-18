@@ -31,11 +31,6 @@
     },
     "header": {
       "previewLinkTitle": "预览助理"
-    },
-    "agent": {
-      "mockTitle": "连接到代理",
-      "mockDescription": "已收到“连接到代理”响应类型。在生产中，您将编写代码来处理此连接。",
-      "mockMessageLabel": "此消息将发送至代理："
     }
   }
 }

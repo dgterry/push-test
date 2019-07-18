@@ -31,11 +31,6 @@
     },
     "header": {
       "previewLinkTitle": "Assistant 미리보기"
-    },
-    "agent": {
-      "mockTitle": "에이전트에 연결",
-      "mockDescription": "에이전트에 연결 응답 유형이 수신되었습니다. 프로덕션에서 이 연결을 처리하는 코드를 작성합니다.",
-      "mockMessageLabel": "이 메시지는 다음 에이전트에게 전송됩니다."
     }
   }
 }

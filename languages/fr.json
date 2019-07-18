@@ -31,11 +31,6 @@
     },
     "header": {
       "previewLinkTitle": "Aperçu Assistant"
-    },
-    "agent": {
-      "mockTitle": "Connexion à l'agent",
-      "mockDescription": "Le type de réponse Connexion à l'agent a été reçu. En production, vous écririez du code pour gérer cette connexion.",
-      "mockMessageLabel": "Ce message va être envoyé à l'agent :"
     }
   }
 }
