@@ -31,6 +31,11 @@
     },
     "header": {
       "previewLinkTitle": "Assistant preview"
+    },
+    "agent": {
+      "mockTitle": "Connect to Agent",
+      "mockDescription": "The connect to agent response type was received. In production, you would write code to handle this connection.",
+      "mockMessageLabel": "This message will be sent to the agent:"
     }
   }
 }

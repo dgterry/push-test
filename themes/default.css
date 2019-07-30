@@ -114,7 +114,7 @@
   --WWX-BUTTON-line-height: var(--WWX-BASE-small-line-height);
   --WWX-BUTTON-margin-bottom: var(--WWX-BASE-large-spacing);
   --WWX-BUTTON-padding-top-bottom: var(--WWX-BASE-small-spacing);
-  --WWX-BUTTON-padding-right-left: 10px;
+  --WWX-BUTTON-padding-right-left: 8px;
   --WWX-BUTTON-max-width: calc(
     200px - calc(var(--WWX-BUTTON-padding-right-left) + var(--WWX-BUTTON-padding-right-left))
   );
@@ -217,7 +217,7 @@
   --WWX-MESSAGE-bar-background-color: var(--WWX-BASE-accent-color);
   --WWX-MESSAGE-bar-border-radius: var(--WWX-BASE-xsmall-border-radius);
   --WWX-MESSAGE-bar-height: 16px;
-  --WWX-MESSAGE-bar-margin-right: var(--WWX-BASE-med-spacing);
+  --WWX-MESSAGE-bar-margin-right: 5px;
   --WWX-MESSAGE-bar-width: 3px;
   --WWX-MESSAGE-padding-bottom: 4px;
   --WWX-MESSAGE-margin: var(--WWX-BASE-large-spacing);
@@ -226,6 +226,8 @@
   --WWX-MESSAGE-letter-spacing: 0.16px;
   --WWX-MESSAGE-last-margin-bottom: var(--WWX-BASE-xlarge-spacing);
   --WWX-MESSAGE-line-height: var(--WWX-BASE-med-line-height);
+  --WWX-MESSAGE-title-line-height: var(--WWX-BASE-med-line-height);
+  --WWX-MESSAGE-title-margin-bottom-offset: -1px;
   --WWX-MESSAGE-received-background-color: var(--WWX-BASE-secondary-color);
   --WWX-MESSAGE-received-font-color: var(--WWX-BASE-font-color);
   --WWX-MESSAGE-received-margin: var(--WWX-BASE-med-spacing) var(--WWX-BASE-large-spacing);
@@ -280,7 +282,7 @@
   --WWX-IMAGE-text-holder-background-color: var(--WWX-BASE-secondary-color);
   --WWX-IMAGE-text-holder-border-radius: 0 0 var(--WWX-BASE-small-border-radius) var(--WWX-BASE-small-border-radius);
   --WWX-IMAGE-text-loading-height: 10px;
-  --WWX-IMAGE-text-margin: var(--WWX-BASE-med-spacing);
+  --WWX-IMAGE-text-margin: 2px;
   --WWX-IMAGE-title-font-weight: 600;
   --WWX-IMAGE-title-loading-height: var(--WWX-IMAGE-text-loading-height);
   --WWX-IMAGE-title-loading-width: 90%;
@@ -325,6 +327,8 @@
    */
 
   --WWX-OPTIONS-link-color: var(--WWX-BASE-accent-color);
+  --WWX-OPTIONS-holder-margin: var(--WWX-BASE-small-line-height);
   --WWX-OPTIONS-holder-max-width: var(--WWX-MESSAGE-received-max-width);
   --WWX-OPTIONS-holder-margin-top: var(--WWX-BASE-large-spacing);
+
 }

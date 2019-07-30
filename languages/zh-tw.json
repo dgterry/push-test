@@ -31,6 +31,11 @@
     },
     "header": {
       "previewLinkTitle": "預覽助理"
+    },
+    "agent": {
+      "mockTitle": "連接至代理程式",
+      "mockDescription": "收到連接至代理程式回應類型。在生產中，您會撰寫程式碼以處理此連線。",
+      "mockMessageLabel": "此訊息將傳送至代理程式："
     }
   }
 }

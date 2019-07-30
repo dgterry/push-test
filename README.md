@@ -4,7 +4,7 @@
 
 - [Introduction](#introduction)
 - [Configuration Options](#configuration-options)
-- [Initializing your WWX](#initializing-your-wwx)
+- [Initializing your Web Chat](#initializing-your-web-chat)
 - [Instance API](#instance-api)
 - [Events](#events)
 - [Event Callbacks](#event-callbacks)
@@ -12,15 +12,15 @@
 
 ## Introduction
 
-Welcome to the [Watson Assistant](https://www.ibm.com/cloud/watson-assistant/) Web Experience (WWX). WWX is an embedded chat experience you can put on your website with just a few lines of code that takes advantage of all the best and newest that Watson Assistant has to offer.
+Welcome to the [Watson Assistant](https://www.ibm.com/cloud/watson-assistant/) Web Chat. Web Chat is an embedded chat experience you can put on your website with just a few lines of code that takes advantage of all the best and newest that Watson Assistant has to offer.
 
-This repository is meant for developers that have deployed a WWX from Watson Assistant and are looking to embed, configure, customize and extend their WWX instance. WWX is only available to Plus or Dedicated Watson Assistant plans.
+This repository is meant for developers that have deployed a Web Chat from Watson Assistant and are looking to embed, configure, customize and extend their Web Chat instance. Web Chat is only available to Plus or Dedicated Watson Assistant plans.
 
- When we refer to WWX in this documentation, we are referring to the "widget" code here. When we refer to Watson Assistant, we are referring to the Watson Assistant instance you have created in your Watson Assistant account.
+ When we refer to Web Chat in this documentation, we are referring to the "widget" code here. When we refer to Watson Assistant, we are referring to the Watson Assistant instance you have created in your Watson Assistant account.
 
 ## Configuration Options
 
-When you create your WWX inside your Watson Assistant UI, you will be given a small embed code to put on your website that will look similar to...
+When you create your Web Chat inside your Watson Assistant UI, you will be given a small embed code to put on your website that will look similar to...
 
 ```html
 <script src="https://assistant-web.watsonplatform.net/loadWWX.js"></script>
@@ -33,12 +33,12 @@ When you create your WWX inside your Watson Assistant UI, you will be given a sm
 </script>
 ```
 
-There are additional configuration options you can use to control how WWX behaves including setting language strings and enabling custom styling. Most users do not use optional configuration, those that do rarely go beyond `options.language`.
+There are additional configuration options you can use to control how Web Chat behaves including setting language strings and enabling custom styling. Most users do not use optional configuration, those that do rarely go beyond `options.language`.
 
 | Param | Type | Required | Default | Description |
 | --- | --- | --- | --- | --- |
 | options | <code>Object</code> | Required |  | Options. |
-| options.integrationID | <code>string</code> | Required |  |The integration ID of your Assistant Web Experience integration. This is exposed as a UUID. e.g. '1d7e34d5-3952-4b86-90eb-7c7232b9b540' |
+| options.integrationID | <code>string</code> | Required |  |The integration ID of your Web Chat integration. This is exposed as a UUID. e.g. '1d7e34d5-3952-4b86-90eb-7c7232b9b540' |
 | options.region | <code>string</code> | Required |  |Which data center your integration was created in. e.g. 'us-south', 'us-east', 'jp-tok' 'au-syd', 'eu-gb', 'eu-de', etc |
 | options.userID | <code>string</code> | Optional |  | An id to uniquely identify the user. This can be used for GDPR purposes to delete the user's data on request.
 | options.subscriptionID | <code>string</code> | Optional | | If you have a premium account, this is ID of your subscription and it is required. If you need this, it will be provided in the snippet for you to copy and paste. If you don't need this, you won't see it.
@@ -46,12 +46,12 @@ There are additional configuration options you can use to control how WWX behave
 | options.openChatByDefault | <code>boolean</code> | Optional | <code>false</code> | By default, the chat window will be rendered in a "closed" state. |
 | options.languagePack | <code>Object</code> | Optional |  | An object with strings in the format of the `.json` files in [languages](languages). See [languages/README.md](languages/README.md) for more details. This setting will replace all of the strings normally provided by default based on your `options.locale`. It must contain a full set of strings since this is a replacement and not a merge.
 | options.locale | <code>string</code> | Optional |  | Locale to use for UI strings and date string formatting. See [languages/README.md](languages/README.md) for available locales. If not provided, this will be auto detected by browser preference. Defaults to English US (en) if not provided or detected language is not an accepted language. |
-| options.element | <code>Element</code> | Optional |  | The DOM element to render WWX to. By default, WWX will generate its own element to house the chat window and chat launcher. |
+| options.element | <code>Element</code> | Optional |  | The DOM element to render Web Chat to. By default, Web Chat will generate its own element to house the chat window and chat launcher. |
 | options.debug | <code>boolean</code> |  Optional | <code>false</code> | Automatically adds a listener that will output a console message for each event that is fired.
 
-## Initializing your WWX
+## Initializing your Web Chat
 
-`loadWWX` returns a promise that resolves when WWX has instantiated. This promise resolves with an instance with an API to subscribe to events and issue actions.
+`loadWWX` returns a promise that resolves when Web Chat has instantiated. This promise resolves with an instance with an API to subscribe to events and issue actions.
 
 ```html
 <script src="https://assistant-web.watsonplatform.net/loadWWX.js"></script>
@@ -82,8 +82,8 @@ There are additional configuration options you can use to control how WWX behave
 
 ## Instance API
 
-The returned instance has an API to allow you to [manage events](#events) going to/coming from WWX and to both clear WWX and destroy WWX. This instance also allows
-you to ask the widget to perform certain actions. The event system is key to extending and manipulating WWX on your own webpage.
+The returned instance has an API to allow you to [manage events](#events) going to/coming from Web Chat. This instance also allows
+you to ask the widget to perform certain actions. The event system is key to extending and manipulating Web Chat on your own webpage.
 
 You can subscribe to events using the [`on`](#instance.on) and [`once`](#instance.once) methods. Events handler are called in the order in which they were registered.
 
@@ -95,6 +95,7 @@ You can subscribe to events using the [`on`](#instance.on) and [`once`](#instanc
     * [.updateLanguagePack()](#instance.updateLanguagePack)
     * [.updateUserID()](#instance.updateUserID)
     * [.updateLocale()](#instance.updateLocale) => <code>Promise</code>
+    * [.getLocale()](#instance.getLocale) => <code>string</code>
     * [.toggleOpen()](#instance.toggleOpen)
     * [.openWindow()](#instance.openWindow)
     * [.destroy()](#instance.destroy)
@@ -223,16 +224,34 @@ handler will automatically be removed.
 Sends the given message to the assistant on the remote server. This will result in a [`pre:send`](#event-presend) and [`send`](#event-send) event
 being fired on the event bus.
 
+**Returns**: <code>instance</code> - returns itself for chaining  
+
+| Param | Type | Required | Default | Description |
+| --- | --- | --- | --- | --- |
+| message | <code>Object</code> | Required |  | A v2 message request object. |
+| options | <code>Object</code> |  |  | Options. |
+| options.silent | <code>Boolean</code> |  |  | If true, the message will be sent to your Assistant but will not display in the UI. |
  
 **Example**
 ```js
-var mockSendObject = {value: {input: {text: "I would like to open an account"}}};
-instance.send(mockSendObject);
+var sendObject = {
+  "input": {
+    "message_type": "text",
+    "text": "get human agent"
+  }
+};
+var sendOptions = {
+  "silent": true
+}
+instance.send(mockSendObject, sendOptions);
 ```
 
 <a name="instance.updateLanguagePack"></a>
 ### instance.updateLanguagePack()
-Sets the current language pack in use by the widget.
+Updates the current language pack using the values from the provided language pack. This language pack does
+not need to be complete; only the strings contained in it will be updated. Any strings that are missing will be
+ignored and the current values will remain unchanged. You can use [getLocale](#instance.getLocale) to identify the
+current locale if you need to make an update based on the user's locale.
  
 **Example**
 ```js
@@ -242,16 +261,31 @@ instance.updateLanguagePack(languagePack);
 
 <a name="instance.updateLocale"></a>
 ### instance.updateLocale()
-Sets the locale that is currently in use by the widget. If no language pack was originally provided, then a new
-one that matches the given locale will also be loaded.
+Updates the locale currently in use by the widget. If no language pack was originally provided, then a new one
+that matches the given locale will also be loaded. If an unsupported locale is provided, the closest supported
+locale will be chosen. For example, if the language requested is supported but not the region, that language
+without a region will be selected. If the language is not supported, then the application will default to English.
 
 Note: this function is asynchronous and the new language pack may require an asynchronous load to fetch.
  
-**Returns**: <code>Promise</code> - returns a Promise that will resolve once a required language pack has been loaded.  
+**Returns**: <code>Promise</code> - returns a Promise that will resolve to the supported locale that was chosen.
 
 **Example**
 ```js
-instance.updateLocale('en_US');
+instance.updateLocale('en-US');
+```
+
+<a name="instance.getLocale"></a>
+### instance.getLocale()
+Returns the current locale in use by the widget. This may not match the locale that was provided in the
+original public configuration if that value was invalid or if the locale has been changed since then.
+
+**Returns**: <code>string</code> - returns a string containing the language and possibly a region code. Example 
+values include: 'en' and 'en-us'.  
+
+**Example**
+```js
+console.log(instance.getLocale());
 ```
 
 <a name="instance.updateUserID"></a>
@@ -293,7 +327,7 @@ instance.closeWindow();
 
 <a name="instance.destroy"></a>
 ### instance.destroy()
-Destroy WWX and return initial content to the DOM. The chat window and chat launcher will both be destroyed. All subscriptions to events will be removed.
+Destroy the Web Chat and return initial content to the DOM. The chat window and chat launcher will both be destroyed. All subscriptions to events will be removed.
  
 **Example**
 ```js
@@ -302,9 +336,11 @@ instance.destroy();
 
 ## Events
 
-Watson Assistant Web Experience (WWX) uses an event system to speak with your website. With these events you can build your own custom UI responses, send messages to your Assistant from your website code, or even have your website react to changes of state within WWX. See [examples for how to use events in a variety of manners](examples/README.md).
+The Web Chat uses an event system to speak with your website. With these events you can build your own
+custom UI responses, send messages to your Assistant from your website code, or even have your website react to changes
+of state within Web Chat. See [examples for how to use events in a variety of manners](examples/README.md).
 
-Below is a list of the current list of events that are fired by WWX.
+Below is a list of the current list of events that are fired by Web Chat.
 
 | Event | Fired When |
 | --- | --- |
@@ -338,7 +374,7 @@ Callbacks receive an object. See each individual event for what data is passed a
 <a name="event-presend"></a>
 ### pre:send Event
 
-*Description:* When sending a message from WWX, before we call the `send` event we call the `pre:send` event. The purpose of the `pre:send` event is to allow you to synchronously manipulate `event.data` before we pass on the object reference to `event.data` to the `send` event.
+*Description:* When sending a message from Web Chat, before we call the `send` event we call the `pre:send` event. The purpose of the `pre:send` event is to allow you to synchronously manipulate `event.data` before we pass on the object reference to `event.data` to the `send` event.
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -350,7 +386,7 @@ Callbacks receive an object. See each individual event for what data is passed a
 
 ```js
 /**
- * Add "return_context" to all messages sent by WWX to your Assistant.
+ * Add "return_context" to all messages sent by Web Chat to your Assistant.
  */
 function handler(event) {
   event.data.options = event.data.options || {}
@@ -457,7 +493,7 @@ instance.fire({ type: "receive", data: myMessage });
 <a name="event-customResponse"></a>
 ### customResponse Event
 
-*Description:* When WWX receives a response_type from Watson Assistant, it fires this event and returns the message and a DOM element. You can choose to render a custom view or you can perform an action on your website or both.
+*Description:* When Web Chat receives a response_type from Watson Assistant, it fires this event and returns the message and a DOM element. You can choose to render a custom view or you can perform an action on your website or both.
 
 | Param | Type | Description |
 | --- | --- | --- |

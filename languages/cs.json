@@ -31,6 +31,11 @@
     },
     "header": {
       "previewLinkTitle": "Náhled asistenta"
+    },
+    "agent": {
+      "mockTitle": "Připojení k agentoviة",
+      "mockDescription": "Byla přijata odpověď typu Připojení k agentovi. V produkčním prostředí byste k obsloužení tohoto připojení napsali kód.",
+      "mockMessageLabel": "Tato zpráva se odešle agentovi:"
     }
   }
 }

@@ -31,6 +31,11 @@
     },
     "header": {
       "previewLinkTitle": "Vista previa del asistente"
+    },
+    "agent": {
+      "mockTitle": "Conectar con agente",
+      "mockDescription": "Se ha recibido el tipo de respuesta Conectar con agente. En producción, debería escribirse código para gestionar esta conexión.",
+      "mockMessageLabel": "Este mensaje se enviará al agente:"
     }
   }
 }
